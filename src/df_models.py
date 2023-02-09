@@ -36,7 +36,7 @@ class DataframeModel(ABC):
 class InputDataModel(DataframeModel):
     schema = DataFrameSchema(
         {
-            "contractId": Column(int),
+            "contractId": Column(int, report_duplicates="all", nullable=False),
             "engagement": Column(float, checks=[Check.greater_than_or_equal_to(0)], nullable=False, coerce=True),
             "categorie": Column(str, nullable=False, checks=[Check.isin(["A", "B", "C"])]),
         }
