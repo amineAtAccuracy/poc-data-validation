@@ -11,6 +11,7 @@ python = "^3.11"
 pydantic = "^1.10.4"
 pandas = "^1.5.3"
 pandera = "^0.13.4"
+openpyxl = "^3.1.0"
 
 
 [build-system]
