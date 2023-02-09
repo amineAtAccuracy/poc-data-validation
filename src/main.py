@@ -2,7 +2,6 @@ from src.df_models import InputDataModel, OutputDataModel
 
 
 def run() -> None:
-    print('Hello, World!')
 
     # 1. load initial data
     data = InputDataModel().load()
