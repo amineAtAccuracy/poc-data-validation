@@ -1,0 +1,18 @@
+[tool.poetry]
+name = "data-management-poc"
+version = "0.1.0"
+description = ""
+authors = ["None"]
+readme = "README.md"
+packages = [{include = "data_management_poc"}]
+
+[tool.poetry.dependencies]
+python = "^3.11"
+pydantic = "^1.10.4"
+pandas = "^1.5.3"
+pandera = "^0.13.4"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
